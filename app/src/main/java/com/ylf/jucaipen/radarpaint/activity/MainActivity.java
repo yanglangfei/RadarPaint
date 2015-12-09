@@ -21,8 +21,10 @@ public class MainActivity extends Activity {
     private void initView() {
         dialog = new ProgressDialog(this);
         dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-        dialog.setTitle("下载");
+        dialog.setTitle("下载提示");
         dialog.setMax(100);
+
+
         dialog.setProgressNumberFormat("%1d kb/%2d kb");
         MyTask task = new MyTask();
         task.execute();
@@ -52,11 +54,13 @@ public class MainActivity extends Activity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+            dialog.cancel();
         }
 
         @Override
         protected void onProgressUpdate(Integer... values) {
             super.onProgressUpdate(values);
+            //ProgressDialog 更新
             dialog.setProgress(values[0]);
         }
 
