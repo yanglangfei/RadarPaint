@@ -19,6 +19,7 @@ android {
     }
 }
 
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
@@ -27,4 +28,6 @@ dependencies {
     compile files('libs/jsoup-1.8.3.jar')
     compile files('libs/SmartAndroid2.0.jar')
     compile files('libs/hessdroid.jar')
+    compile files('libs/afinal_0.5.1_bin.jar')
+    compile 'com.loopj.android:android-async-http:1.4.9'
 }
