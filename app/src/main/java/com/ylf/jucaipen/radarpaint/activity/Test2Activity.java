@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import com.ylf.jucaipen.radarpaint.R;
 import com.ylf.jucaipen.radarpaint.entity.Student;
-
 import net.tsz.afinal.FinalDb;
-
 import java.util.List;
 /**
  * Created by Administrator on 2015/12/10.
